@@ -1,0 +1,49 @@
+.columns {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    margin: 0 4px;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 472px;
+    background-color: #fff;
+}
+
+.column-header {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    text-align: center;
+}
+
+#cards-wrapper {
+    min-height: 10px;
+    width: 100%;
+}
+
+#cards-wrapper:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.column-footer {
+    border-radius: 3px;
+    color: #5e6c84;
+    display: block;
+    flex: 1 0 auto;    
+    position: relative;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.column-footer button {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    height: 30px;
+}

@@ -1,0 +1,9 @@
+.App {
+  background-color: #F2F2F2;
+  min-height: 100vh;
+}
+
+.column-wrapper {
+  display: flex;
+  padding: 0 30px;
+}
