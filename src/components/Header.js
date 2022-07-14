@@ -1,8 +1,8 @@
 import React from 'react';
-import '../stylesheets/header.css';
+import header from '../stylesheets/header.module.css';
 
 const Header = () => {
-    return <h2 className="site-title">Trello App</h2>
+    return <h2 className={header.siteTitle}>Trello App</h2>
 }
 
 export default Header;

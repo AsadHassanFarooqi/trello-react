@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+
+.modalWrapper {
+  padding: 20px 14px;
+  color: #172b4d;
+}
+
+.modalHeader {
+  font-size: 20px;
+  margin-left: 4px;
+}
+
+.modalState {
+  margin: 5px 8px 4px 35px;
+  color: #5e6c84;
+  font-size: 14px;
+  display: block;
+}
+
+.modalBodyWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalBody {
+  flex: 1;
+  padding: 20px 19px;
+}
+
+.descriptionWrapper {
+  color: #172b4d;
+  font-size: 18px;
+}
+
+.detailDescription {
+  margin-left: 30px;
+  margin-top: 20px;
+  display: block;
+  background-color: #091e420a;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  display: block;
+  min-height: 40px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #172b4d;
+  width: 100%;
+  text-align: left;
+}
+
+.detailDescription:hover {
+  background-color: #091e4214;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.textareawrapper {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.detailedDesc {
+  color: #172b4d;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-left: 30px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+textarea {
+  width: 100%;  
+  padding: 10px;
+  resize: none;
+}
+
+.btn {
+  float: left;
+  margin: 5px 4px 0 0;
+  border: none;
+  box-shadow: none;
+  align-items: center;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 20px;
+  padding: 6px 12px;
+  text-decoration: none;
+  transition-duration: 85ms;
+  transition-property: background-color,border-color,box-shadow;
+  transition-timing-function: ease;
+  white-space: normal;
+}
+
+.save {
+  background-color: #0079bf;
+  color: #fff;
+}
+
+.save:hover {
+  background-color: #026aa7;
+}
+
+.cancel {
+  background-color: transparent;
+}
+
+.cancel:hover {
+  background-color: #091e4214;
+}
+
+.modalSidebar {
+  width: 15%;
+  margin-left: 10px;
+}

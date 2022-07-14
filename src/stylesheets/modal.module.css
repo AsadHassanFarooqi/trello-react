@@ -1,9 +1,8 @@
 .modal {
   position: fixed;
-  display: block;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
   margin: 0 auto;
   top: 0;
   left: 0;
@@ -11,7 +10,7 @@
   height: 100vh;
   z-index: 100;
   overflow-x: hidden;
-  background-color: rgba(31, 32, 41, 0.75);
+  background-color: #000000a3;
   pointer-events: none;
   opacity: 0;
   transition: opacity 250ms 700ms ease;
@@ -28,16 +27,14 @@
   overflow-x: hidden;
   position: relative;
   display: block;
-  width: 60vw;
-  height: 60%;
+  width: 768px;
   min-height: 400px;
-  min-width: 400px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin:  48px 0 80px;
   margin-bottom: 20px;
   border-radius: 4px;
   padding-bottom: 20px;
-  background-color: #fff;
+  background-color: #f4f5f7;
   align-self: center;
   box-shadow: 0 12px 25px 0 rgba(199, 175, 189, 0.25);
   opacity: 0;
@@ -50,4 +47,26 @@
   opacity: 1;
   transform: scale(1);
   transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
+}
+
+.close_btn {
+  position: absolute;
+  right: 31%;
+  top: 65px;
+  border: 0;
+  outline: none;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  z-index: 101;
+  color: black;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.close_btn:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  transition: background-color 300ms ease-in-out;
 }

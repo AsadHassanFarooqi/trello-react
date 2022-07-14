@@ -1,0 +1,29 @@
+.wrapper {
+    background-color: white;
+    min-height: 20px;
+    border-radius: 5px;
+    padding: 6px 8px;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: 16px;
+    color: #172b4d;
+    margin: 0 0 4px;
+    word-wrap: break-word;
+}
+
+.badge {
+    color: #6b778c;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar {
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+}
