@@ -1,18 +1,24 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -81,7 +87,8 @@ h1,h2,h3,h4,h5,h6,p {
 
 .detailedDesc {
   color: #172b4d;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
+    Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -92,8 +99,12 @@ h1,h2,h3,h4,h5,h6,p {
   outline: none;
 }
 
+.detailedDesc:hover {
+  cursor: pointer;
+}
+
 textarea {
-  width: 100%;  
+  width: 100%;
   padding: 10px;
   resize: none;
 }
@@ -115,7 +126,7 @@ textarea {
   padding: 6px 12px;
   text-decoration: none;
   transition-duration: 85ms;
-  transition-property: background-color,border-color,box-shadow;
+  transition-property: background-color, border-color, box-shadow;
   transition-timing-function: ease;
   white-space: normal;
 }
@@ -140,4 +151,10 @@ textarea {
 .modalSidebar {
   width: 15%;
   margin-left: 10px;
+}
+
+.columnWrapper {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
 }

@@ -13,6 +13,11 @@
     word-wrap: break-word;
 }
 
+.moving {
+    opacity: 0.8;
+    background-color: red;
+}
+
 .badge {
     color: #6b778c;
 }

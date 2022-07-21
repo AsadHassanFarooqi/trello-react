@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import "./App.css";
+import React, { useState } from "react";
 
 // components Import
 import Header from "./components/Header";
 import Col from "./components/Col";
+import Main from "./components/Main";
 import Modal from "./components/Modal";
 import styles from "./index.module.css";
 
@@ -12,9 +12,6 @@ import data from "./data/data";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowRestore, faList } from "@fortawesome/free-solid-svg-icons";
-
-import { CKEditor } from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 function App() {
   const saveBtnStyles = [styles.btn, styles.save].join(" ");
@@ -25,14 +22,16 @@ function App() {
   const [modalData, setModalData] = useState({
     cardData: "",
     title: "",
+    desc: ""
   });
   const [inputValue, setInputValue] = useState("");
   const [description, setDescription] = useState("");
 
-  const handleModalOpen = (cardData, title) => {
+  const handleModalOpen = (cardData, title, descriptionUpdate) => {
     setModalData({
       cardData: cardData,
       title: title,
+      desc: descriptionUpdate
     });
     setModalIsOpen(true);
   };
@@ -45,7 +44,6 @@ function App() {
 
   const showInput = () => {
     setInputOpen(true);
-    console.log("button worked");
   };
 
   const handleTextareaValue = (e) => {
@@ -55,6 +53,7 @@ function App() {
   const handleValue = () => {
     setDescription(inputValue);
     setInputOpen(false);
+    modalData.desc(inputValue);
   };
 
   const handleCancelEvent = () => {
@@ -97,6 +96,7 @@ function App() {
 
   return (
     <div className="App">
+    <Main />
       <Modal show={modalIsOpen} onClose={handleModalClose}>
         <div className={styles.modalWrapper}>
           <React.Fragment>
@@ -120,13 +120,15 @@ function App() {
         </div>
       </Modal>
       <Header />
-      <div className="column-wrapper">
-        {data.map((item) => (
+      <div className={styles.columnWrapper}>
+        {data.map((item, itemIndex) => (
           <Col
-            key={item.id}
+            key={item.id.toString()}
             title={item.title}
             handleModalOpen={handleModalOpen}
             description={description}
+            columnName={item.title}
+            itemIndex={itemIndex}
           />
         ))}
       </div>
