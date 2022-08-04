@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cardinfo_box_close {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #42526e;
+  height: 32px;
+  margin: 4px;
+  overflow: hidden;
+  padding: 4px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background-color 85ms, color 85ms;
+  width: 32px;
+  z-index: 2;
+}
+
+.cardinfo_box_close:hover {
+  background-color: #091e4214;
+  color: #42526e;
+  cursor: pointer;
+}
+
+.cardinfo {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 550px;
+  width: fit-content;
+  max-width: 650px;
+  height: fit-content;
+}
+
+.cardinfo_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cardinfo_box_body {
+  flex: 1;
+  flex-direction: column;
+}
+
+.cardinfo_box_title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cardinfo_box_editable_container {
+  width: fit-content;
+  margin-bottom: 20px;
+  min-width: 250px;
+}
+
+.cardinfo_box_title p {
+  font-weight: bold;
+  font-size: 20px;
+  min-height: 24px;
+  color: #172b4d;
+}
+
+.cardinfo_box_title svg {
+  height: 14px;
+  width: 14px;
+}
+
+.cardinfo_box_sidebar {
+  width: 20%;
+}
+
+.cardinfo_box_labels {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cardinfo_box_labels label {
+  border-radius: 40px;
+  background-color: gray;
+  color: #fff;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cardinfo_box_labels label svg {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.cardinfo_box ul {
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+}
+.cardinfo_box ul li {
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cardinfo_box ul .li_active {
+  box-shadow: 0 0 0 3px yellow;
+}
+
+.cardinfo_box_progress-bar {
+  width: 100%;
+  border-radius: 30px;
+  height: 10px;
+  border: 1px solid #ccc;
+}
+
+.cardinfo_box_progress {
+  height: 100%;
+  border-radius: 30px;
+  background-color: skyblue;
+  width: 0;
+  transition: 200ms;
+}
+
+.cardinfo_box_task_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cardinfo_box_task_checkbox {
+  display: flex;
+  gap: 10px;
+}
+
+.cardinfo_box_task_checkbox input,
+.cardinfo_box_task_checkbox svg {
+  height: 18px;
+  width: 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.cardinfo_box_task_checkbox p {
+  flex: 1;
+  line-height: 18px;
+}
+
+.cardinfo_box_task_checkbox .completed {
+  text-decoration-line: line-through;
+}
+
+.cardinfo_box input[type="date"] {
+  width: fit-content;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+}
