@@ -66,7 +66,6 @@ function CardInfo(props) {
 
   const handleRemoveLabel = (text) => {
     const tempLabels = values.labels.filter((item) => item.text !== text);
-    console.log(tempLabels);
 
     setValues({
       ...values,
