@@ -45,6 +45,7 @@ const Boards = (props) => {
             boardIndex={props.board?.id}
             handleDragEnter={props.handleDragEnter}
             handleDragEnd={props.handleDragEnd}
+            updateCard={props.updateCard}
           />
         ))}
         <Editable

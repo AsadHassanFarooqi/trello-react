@@ -97,6 +97,19 @@ function App() {
     setBoards(tempBoards);
   };
 
+  const updateCard = (bid, cid, card) => {
+    const bIndex = boards.findIndex((item) => item.id ===bid);
+    if(bIndex < 0) return;
+
+    const cIndex = boards[bIndex].cards.findIndex(item => item.id === cid);
+    if(cIndex < 0) return;
+
+    const tempBoards = [...boards];
+    tempBoards[bIndex].cards[cIndex] = card;
+    setBoards(tempBoards);
+
+  }
+
   return (
     <div className="App">
       <Header />
@@ -111,6 +124,7 @@ function App() {
               removeCard={handleRemoveCard}
               handleDragEnter={handleDragEnter}
               handleDragEnd={handleDragEnd}
+              updateCard={updateCard}
             />
           ))}
           <Editable

@@ -16,7 +16,7 @@ const data = [
                     }
                 ],
                 description: "blah blah blah",
-                assignedUser: ""
+                assignedUser: []
             },
             {
                 id: uuidv4(),
@@ -28,7 +28,7 @@ const data = [
                     }
                 ],
                 description: "blah blah blah",
-                assignedUser: ""
+                assignedUser: []
             }
         ]
     }

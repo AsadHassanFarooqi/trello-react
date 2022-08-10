@@ -12,9 +12,23 @@ import "./Card.css";
 const Card = (props) => {
   const [dropdown, setDropdown] = useState(false);
   const [showModal, setShowModal] = useState(false);
+
+
+  const handleDropdown = (e) => {
+    e.stopPropagation();
+    setDropdown(prevState => !prevState);
+  }
+
   return (
     <>
-      {showModal && <CardInfo onClose={() => setShowModal(false)} />}
+      {showModal && (
+        <CardInfo
+          card={props.card}
+          onClose={() => setShowModal(false)}
+          updateCard={props.updateCard}
+          boardIndex={props.boardIndex}
+        />
+      )}
       <div
         className="card"
         draggable
@@ -30,7 +44,7 @@ const Card = (props) => {
               <Chip text={item.text} color={item.color} key={index} />
             ))}
           </div>
-          <div className="card_top_more" onClick={() => setDropdown(true)}>
+          <div className="card_top_more" onClick={(e) => handleDropdown(e)}>
             <FontAwesomeIcon icon={faEllipsis} />
             {dropdown && (
               <Dropdown onClose={() => setDropdown(false)}>
