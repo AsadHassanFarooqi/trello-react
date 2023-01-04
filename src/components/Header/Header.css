@@ -1,7 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content:  space-evenly;
+}
+
 .app_navbar {
-    margin: 0 auto;
     padding: 50px 0;
     color: lightblue;
     font-size: 60px;
     text-align: center;
+}
+
+.btn-save {
+    color: white;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    font-size: 18px;
+    padding: 12px;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5ms ease-in-out;
+    font-weight: bold;
+}
+
+.btn-save:hover {
+    background-color: white;
+    color: lightblue;
 }

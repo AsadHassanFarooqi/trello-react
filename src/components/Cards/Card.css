@@ -46,6 +46,16 @@
   opacity: 1;
 }
 
+.cardinfo_member {
+  margin-left: auto;
+}
+
+.cardinfo_member img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
 .card_dropdown {
   padding: 20px;
   width: 150px !important;

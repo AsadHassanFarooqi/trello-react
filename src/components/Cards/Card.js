@@ -13,11 +13,10 @@ const Card = (props) => {
   const [dropdown, setDropdown] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-
   const handleDropdown = (e) => {
     e.stopPropagation();
-    setDropdown(prevState => !prevState);
-  }
+    setDropdown((prevState) => !prevState);
+  };
 
   return (
     <>
@@ -65,6 +64,14 @@ const Card = (props) => {
         <div className="card_footer">
           {props.card.description && (
             <FontAwesomeIcon icon={faMessage} className="card_footer_icon" />
+          )}
+          {props.card.assignedUser && (
+            <div className="cardinfo_member">
+              <img
+                src={props.card.assignedUser.url}
+                alt={props.card.assignedUser.name}
+              />
+            </div>
           )}
         </div>
       </div>
